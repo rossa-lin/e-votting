@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Kandidat</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins";
+      }
+
+      .navbar img {
+        width: 1530px;
+      }
+
+      body {
+        background-image: url("background-utama.png");
+        color: white;
+      }
+
+      /* LAYOUT */
+
+      .container {
+        display: flex;
+      }
+
+      .sidebar {
+        width: 220px;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .content {
+        flex: 3;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .kandidat img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+
+      .kandidats h1 {
+        text-align: center;
+      }
+
+      .detail {
+        margin-top: 15px;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 20px;
+        background: #7a1f2a;
+        color: white;
+        cursor: pointer;
+      }
+
+      .profil {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar"><img src="Navbar.png" alt="" /></header>
+
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="button">
+          <button><span>Voting</span></button>
+        </div>
+        <div class="button">
+          <button><span>Hasil Voting</span></button>
+        </div>
+
+        <div class="button">
+          <p>Hi, 1234!</p>
+          <button><span>Log out</span></button>
+        </div>
+      </aside>
+
+      <!-- KANDIDAT -->
+      <main class="kandidats">
+        <h1>Daftar Kandidat</h1>
+
+        <div class="bagiankandidat">
+          <!-- KANDIDAT 1 -->
+          <div class="kandidat">
+            <!-- FOTO -->
+            <div class="profil">
+              <img src="Deswita.jpeg" alt="" />
+            </div>
+
+            <h2>Kandidat 1</h2>
+            <p>Deswita Mahrifiani</p>
+
+            <button><span>Detail</span></button>
+          </div>
+
+          <!-- KANDIDAT 2 -->
+          <div class="kandidat">
+            <!-- FOTO -->
+            <div class="profil">
+              <img src="Zila.jpeg" alt="" />
+            </div>
+            <h2>Kandidat 2</h2>
+            <p>Zila Azza Ananta</p>
+
+            <button><span>Detail</span></button>
+          </div>
+
+          <!-- KANDIDAT 3 -->
+          <div class="kandidat">
+            <!-- FOTO -->
+            <div class="profil">
+              <img src="Wiwit.jpeg" alt="" />
+            </div>
+
+            <h2>Kandidat 3</h2>
+            <p>Wiwit Nur Setyani</p>
+
+            <button><span>Detail</span></button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

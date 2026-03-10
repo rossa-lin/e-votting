@@ -4,68 +4,154 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>E-Voting Ketua Kelas</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- FONT POPPINS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- HUGE ICON -->
+<link href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" rel="stylesheet">
+
 <style>
-    
+
     *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Poppins', sans-serif;
-}
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Poppins', sans-serif;
+        }
 
-body{
-height:100vh;
-background-image: url("background-utama.png");
-background-size: cover;
-background-position: center;
-}
+    /* background foto */
+    body{
+        height:100vh;
+        background-image:url("background-utama.png");
+        background-size:cover;
+        background-position:center;
+        }
 
-.container{
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-height:90vh;
-color:#f2e3d5;
-text-align:center;
-}
+    /* navbar */
+    .navbar{
+        height:70px;
+        background:#7c1d2b;
+        display:flex;
+        align-items:center;
+        padding-left:40px;
+        }
 
-.vot{
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 150%;
-    
-}
-</style>
-</head>
-<body>
+    .logo{
+    height:40px;
+    }
 
-<div class="container">
+    /* container */
+    .container{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#f5e6da;
+    }
 
-    <div class="title">
-        <div class="vot">
-        <h1>E-Voting Ketua Kelas</h1>
-        <p>XI RPL 2 SMKN 1 Kandeman</p>
+    .container h1{
+    font-size:48px;
+    font-weight:600;
+    margin-bottom:10px;
+    }
+
+    /* login box */
+    .login-box{
+    background:#e6cdbb;
+    padding:35px;
+    border-radius:20px;
+    width:350px;
+    margin-top:25px;
+    text-align:left;
+    }
+
+    /* label */
+    .login-box label{
+    font-size:14px;
+    color:#333;
+    }
+
+    /* input */
+    .input-group{
+    display:flex;
+    align-items:center;
+    background:white;
+    border-radius:25px;
+    padding:10px 15px;
+    margin:8px 0 20px 0;
+    }
+
+    .input-group i{
+    font-size:18px;
+    margin-right:10px;
+    color:#7c1d2b;
+    }
+
+    input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-family:'Poppins', sans-serif;
+    }
+
+    /* button */
+    button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:25px;
+    background:#7c1d2b;
+    color:white;
+    font-weight:500;
+    cursor:pointer;
+    }
+
+    button:hover{
+    background:#5e1420;
+    }
+    .login{
+        width: 85.48px;
+        height: 36.8px;
+        text-align: center;
+    }
+
+    </style>
+    </head>
+
+    <body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+    <img src="logo.png" class="logo">
     </div>
+
+    <!-- MAIN -->
+    <div class="container">
+
+    <h1>E-Voting Ketua Kelas</h1>
+    <p>XI RPL 2 SMKN 1 Kandeman</p>
+
+    <div class="login-box">
+
+    <label>Masukkan NIS Anda</label>
+    <div class="input-group">
+    <i class="hgi hgi-stroke hgi-user"></i>
+    <input type="text">
+    </div>
+
+    <label>Masukkan Kode Anda</label>
+    <div class="input-group">
+    <i class="hgi hgi-stroke hgi-lock"></i>
+    <input type="password">
+    </div>
+<div class="login">
+    <button>Login</button>
+</div>
 </div>
 
-    <div class="login">
-
-        <label>Masukkan NIS Anda</label>
-        <div class="input-group">
-            <i class="fa fa-user"></i>
-            <input type="text">
-        </div>
-
-        <label>Masukkan Kode Anda</label>
-        <div class="input">
-            <i class="fa fa-lock"></i>
-            <input type="password">
-        </div>
-        <button>Login</button>
-    </div>
 </div>
 
 </body>

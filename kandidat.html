@@ -16,8 +16,19 @@
         font-family: "poppins";
       }
 
-      .navbar img {
-        width: 1530px;
+      nav {
+        background: #701f31;
+        box-shadow: 0 0 5px black;
+        height: 55px;
+        width: 1280px;
+        margin-top: -10px;
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+
+      .logo img {
+        margin-top: -35px;
+        margin-left: -25px;
       }
 
       body {
@@ -35,29 +46,69 @@
       }
 
       .judul h1 {
+        color: #ebd4c1;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
+        font-size: 55px;
       }
 
       .kandidats {
         display: flex;
         justify-content: center;
-        gap: 150px;
+        gap: 30px;
+
+        margin: 50px;
+        padding: 50px;
       }
 
       .kandidat img {
-        width: 120px;
-        height: 120px;
+        width: 170px;
+        height: 170px;
         border-radius: 50%;
         object-fit: cover;
         margin-bottom: 15px;
+      }
+
+      .profil {
+        background-color: #ebd4c1;
+        padding-top: 25px;
+        padding-bottom: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 30px;
+      }
+
+      .profil h1 {
+        color: #6f120b;
+        text-align: center;
+      }
+
+      .profil h3 {
+        color: #6f120b;
+        text-align: center;
+        margin-top: -5px;
+      }
+
+      .detail {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+      }
+
+      .detail h4 {
+        color: #ebd4c1;
+        text-align: center;
       }
     </style>
   </head>
 
   <body>
     <!-- NAVBAR -->
-    <header class="navbar"><img src="Navbar.png" alt="" /></header>
+    <nav>
+      <div class="logo">
+        <img src="Logo PilihAja.png" alt="" width="200px" />
+      </div>
+    </nav>
 
     <!-- SIDEBAR -->
     <aside class="sidebar">
@@ -84,33 +135,75 @@
       <div class="kandidat">
         <div class="profil">
           <img src="Deswita.jpeg" alt="" />
-        </div>
-        <h2>Kandidat 1</h2>
-        <p>Deswita Mahrifiani</p>
+          <h1>Kandidat 1</h1>
+          <h3>Deswita M</h3>
 
-        <button><span>Detail</span></button>
+          <div class="detail">
+            <button
+              style="
+                height: 30px;
+                width: 110px;
+                margin-top: 10px;
+                border-radius: 10px;
+                background-color: #723238;
+                border: 0px;
+                font-size: 20px;
+              "
+            >
+              <h4>Detail</h4>
+            </button>
+          </div>
+        </div>
       </div>
 
       <!-- KANDIDAT 2 -->
       <div class="kandidat">
         <div class="profil">
           <img src="Zila.jpeg" alt="" />
-        </div>
-        <h2>Kandidat 2</h2>
-        <p>Zila Azsa Ananta</p>
+          <h1>Kandidat 2</h1>
+          <h3>Zila Asza A</h3>
 
-        <button><span>Detail</span></button>
+          <div class="detail">
+            <button
+              style="
+                height: 30px;
+                width: 110px;
+                margin-top: 10px;
+                border-radius: 10px;
+                background-color: #723238;
+                border: 0px;
+                font-size: 20px;
+              "
+            >
+              <h4>Detail</h4>
+            </button>
+          </div>
+        </div>
       </div>
 
       <!-- KANDIDAT 3 -->
       <div class="kandidat">
         <div class="profil">
           <img src="Wiwit.jpeg" alt="" />
-        </div>
-        <h2>Kandidat 3</h2>
-        <p>Wiwit Nur Setyani</p>
+          <h1>Kandidat 3</h1>
+          <h3>Wiwit Nur S</h3>
 
-        <button><span>Detail</span></button>
+          <div class="detail">
+            <button
+              style="
+                height: 30px;
+                width: 110px;
+                margin-top: 10px;
+                border-radius: 10px;
+                background-color: #723238;
+                border: 0px;
+                font-size: 20px;
+              "
+            >
+              <h4>Detail</h4>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </body>

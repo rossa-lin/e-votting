@@ -26,11 +26,6 @@
       }
 
       /* LAYOUT */
-
-      .container {
-        display: flex;
-      }
-
       .sidebar {
         width: 220px;
         padding: 30px 20px;
@@ -39,9 +34,7 @@
         justify-content: space-between;
       }
 
-      .content {
-        flex: 3;
-        padding: 40px;
+      .judul h1 {
         text-align: center;
       }
 
@@ -52,26 +45,6 @@
         object-fit: cover;
         margin-bottom: 15px;
       }
-
-      .kandidats h1 {
-        text-align: center;
-      }
-
-      .detail {
-        margin-top: 15px;
-        padding: 10px 25px;
-        border: none;
-        border-radius: 20px;
-        background: #7a1f2a;
-        color: white;
-        cursor: pointer;
-      }
-
-      .profil {
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-      }
     </style>
   </head>
 
@@ -79,66 +52,62 @@
     <!-- NAVBAR -->
     <header class="navbar"><img src="Navbar.png" alt="" /></header>
 
-    <div class="container">
-      <!-- SIDEBAR -->
-      <aside class="sidebar">
-        <div class="button">
-          <button><span>Voting</span></button>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="button">
+        <button><span>Voting</span></button>
+      </div>
+      <div class="button">
+        <button><span>Hasil Voting</span></button>
+      </div>
+
+      <div class="button">
+        <p>Hi, 1234!</p>
+        <button><span>Log out</span></button>
+      </div>
+    </aside>
+
+    <!-- KANDIDAT -->
+    <div class="judul">
+      <h1>Daftar Kandidat</h1>
+    </div>
+
+    <div class="kandidats">
+      <!-- KANDIDAT 1 -->
+      <div class="kandidat">
+        <!-- FOTO -->
+        <div class="profil">
+          <img src="Deswita.jpeg" alt="" />
         </div>
-        <div class="button">
-          <button><span>Hasil Voting</span></button>
+        <h2>Kandidat 1</h2>
+        <p>Deswita Mahrifiani</p>
+
+        <button><span>Detail</span></button>
+      </div>
+
+      <!-- KANDIDAT 2 -->
+      <div class="kandidat">
+        <!-- FOTO -->
+        <div class="profil">
+          <img src="Zila.jpeg" alt="" />
         </div>
+        <h2>Kandidat 2</h2>
+        <p>Zila Azsa Ananta</p>
 
-        <div class="button">
-          <p>Hi, 1234!</p>
-          <button><span>Log out</span></button>
+        <button><span>Detail</span></button>
+      </div>
+
+      <!-- KANDIDAT 3 -->
+      <div class="kandidat">
+        <!-- FOTO -->
+        <div class="profil">
+          <img src="Wiwit.jpeg" alt="" />
         </div>
-      </aside>
+        <h2>Kandidat 3</h2>
+        <p>Wiwit Nur Setyani</p>
 
-      <!-- KANDIDAT -->
-      <main class="kandidats">
-        <h1>Daftar Kandidat</h1>
-
-        <div class="bagiankandidat">
-          <!-- KANDIDAT 1 -->
-          <div class="kandidat">
-            <!-- FOTO -->
-            <div class="profil">
-              <img src="Deswita.jpeg" alt="" />
-            </div>
-
-            <h2>Kandidat 1</h2>
-            <p>Deswita Mahrifiani</p>
-
-            <button><span>Detail</span></button>
-          </div>
-
-          <!-- KANDIDAT 2 -->
-          <div class="kandidat">
-            <!-- FOTO -->
-            <div class="profil">
-              <img src="Zila.jpeg" alt="" />
-            </div>
-            <h2>Kandidat 2</h2>
-            <p>Zila Azza Ananta</p>
-
-            <button><span>Detail</span></button>
-          </div>
-
-          <!-- KANDIDAT 3 -->
-          <div class="kandidat">
-            <!-- FOTO -->
-            <div class="profil">
-              <img src="Wiwit.jpeg" alt="" />
-            </div>
-
-            <h2>Kandidat 3</h2>
-            <p>Wiwit Nur Setyani</p>
-
-            <button><span>Detail</span></button>
-          </div>
-        </div>
-      </main>
+        <button><span>Detail</span></button>
+      </div>
     </div>
   </body>
 </html>

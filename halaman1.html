@@ -8,8 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
      
   <style>
+    .teks-judul {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
     * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
       font-family: 'Poppins', sans-serif;
+    }
+    body{
       background-image: url(background-utama.png);
       color: #E4CBBA;
     }
@@ -18,14 +34,33 @@
         text-align:start;
         color: #E4CBBA;
     }
+    .container{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:80px;
+        margin-top:60px;
+    }
+    .card{
+        background:#e8d0bf;
+        padding:40px;
+        border-radius:25px;
+        width:380px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    }
     
   </style>
 </head>
 
 <body>
+  <div class="teks-judul">
+    <div class="title">
     <h1>E-Voting Ketua Kelas </h1>
     <p>XI RPL 2 SMKN 1 Kandeman</p>
-
+  </div>
+  
+  <div class="container">
+    <div class="card">
     <div class="teks">
           <p>Masukkan NIS Anda</p>
           <input type="text" placeholder="NISN">
@@ -35,6 +70,8 @@
           <input type="text" placeholder="Kode">
         </div>
     <button>Login</button>
+    </div>
+
 </div>
 </body>
 </html>

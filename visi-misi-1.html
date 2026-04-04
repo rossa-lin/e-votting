@@ -9,6 +9,7 @@
         body {
             font-family: 'Poppins';
             background-image: url('background-utama.png');
+            margin: auto;
         }
         nav {
             background: #701F31;
@@ -20,37 +21,86 @@
             margin-right: -10px;
         }
         .logo img {
-            margin-top: -35px;
+            margin-top: -30px;
             margin-left: -25px;
         }
         .side-bar {
             background: #701F31;
             height: 900px;
-            width: 100px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            margin-top: -640px;
         }
         .judul {
+            font-size: 25px;
             color: #EBD4C1;
             display: flex;
             justify-content: center;
+            margin-left: 200px;
+        }
+        .kandidat-isi {
+            background-color: #EBD4C1;
+            border-radius: 40px;
+            width: 850px;
+            height: 500px;
+            display: flex;
+            justify-self: end;
+            flex-direction: column;
+            margin-right: 80px;
         }
         .kandidat {
+            color: #851521;
+        
+        }
+        .nama {
+            font-size: 25px;
+            color: #701F31;
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+            margin-left: -180px;
+        }
+        .foto img {
+             height: 180px;
+             width: 180px;
+             border-radius: 50%;
+             margin-left: 50px;
+             margin-top: -30px;
+        }
+        .kandidat-1 {
+            font-size: 30px;
             color: #851521;
             display: flex;
             justify-content: center;
         }
-        .nama {
-            color: #701F31;
+        .button-voting-1 {
+            height: 30px;
             display: flex;
             justify-content: center;
         }
-        .foto img {
-             height: 170px;
-             width: 170px;
+        .button-kembali {
+            height: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .button-1 {
+            gap: 50px;
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            margin-right: -180px;
         }
         .deskripsi {
-            font-size: 20px;
+            font-size: 15px;
+            text-align: justify;
+            margin-right: 50px;
+        }
+        .img-desk {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            gap: 30px;
         }
     </style>
 </head>
@@ -67,39 +117,53 @@
     </div>
 
     <div class="kandidat">
-        <div class="kandidat-1">
-            <h2>Detail Kandidat 1</h2>
-        </div>
-        <div class="nama">
-            <h3>Deswita M</h3>
-        </div>
-        <div class="foto">
-            <img src="Deswita.jpeg">
-        </div>
-        <div class="deskripsi">
-            <p></p>
-        </div>
-        <div class="button-voting-1">
-        <button style="width: 150px; border-radius: 15px; background-color: #571C21; border: 0px;"><span><b>Voting</b></span></button>
-        </div>
-        <div class="button-kembali">
-        <button style="width: 150px; border-radius: 15px; background-color: #851521; border: 0px;"><span><b>Kembali</b></span></button>
+        <div class="kandidat-isi">
+
+             <div class="kandidat-1">
+                 <h2>Detail Kandidat 1</h2>
+             </div>
+
+             <div class="nama">
+                 <h3>Deswita M</h3>
+             </div>
+
+             <div class="img-desk">
+                <div class="foto">
+                    <img src="deswita2.jpeg">
+                </div>
+
+                <div class="deskripsi">
+                    <p>Saya memiliki visi untuk menjadikan kelas yang aktif, kreatif, dan berprestasi dalam berbagai bidang. 
+                        Saya ingin mengajak teman-teman untuk lebih berpartisipasi dalam kegiatan sekolah, baik akademik maupun non-akademik. 
+                        Selain itu, saya akan mendorong semangat belajar agar kita bisa meraih prestasi bersama. 
+                        Saya juga ingin menghadirkan ide-ide kreatif yang dapat membuat kelas kita lebih berkembang dan dikenal sebagai kelas yang unggul.</p>
+                </div>
+             </div>
+
+            <div class="button-1">
+                <div class="button-voting-1">
+                <button style="width: 100px; border-radius: 10px; background-color: #571C21; border: 0px;"><span style="color: #EBD4C1;"><b>Voting</b></span></button>
+                </div>
+                <div class="button-kembali">
+                <button style="width: 100px; border-radius: 10px; background-color: #851521; border: 0px;"><span style="color: #EBD4C1;"><b>Kembali</b></span></button>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="side-bar">
 
         <div class="button-voting-2">
-            <button style="width: 150px; border-radius: 20px; background-color: #EBD4C1; border: 0px;"><span><b>Voting</b></span></button>
+            <button style="width: 150px; height: 35px; background-color: #EBD4C1; border: 0px; border-radius: 30px;"><span style="font-size: 20px;"><b>Voting</b></span></button>
         </div>
         <div class="button-hasil-voting">
-            <button style="width: 150px; border-radius: 20px; background-color: #EBD4C1; border: 0px;"><span><b>Hasil Voting</b></span></button>
+            <button style="width: 160px; height: 35px; border-radius: 20px; background-color: #EBD4C1; border: 0px; border-radius: 30px;"><span style="font-size: 20px;"><b>Hasil Voting</b></span></button>
         </div>
 
         <span>Hi, 1234!</span>
 
         <div class="button-logout">
-            <button style="width: 155px; border-radius: 20px; background-color: #EBD4C1; border: 0px;"><span><b>Log out</b></span></button>
+            <button style="width: 155px; height: 40px; border-radius: 10px; background-color: #EBD4C1; border: 0px;"><span style="font-size: 20px;"><b>Log out</b></span></button>
         </div>
 
     </div>

@@ -36,11 +36,40 @@
         color: white;
       }
 
-      popup {
-        background-color: #ebd4c1;
+      .sidebar {
+        background-color: #701F31;
+        width: 100px;
+        height: 520px;
       }
 
-      popup h2 {
+      .popup {
+        background-color: #ebd4c1;
+        width: 500px;
+        height: 240px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        text-align: center;
+      }
+
+      .toa img {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        top: -85px;
+        right: 153px;
+      }
+
+      .pesan p {
+        color: #701f31;
+        text-align: center;
+        font-size: 25px;
+      }
+
+      .kembali h5 {
         color: #701f31;
         text-align: center;
       }
@@ -72,10 +101,16 @@
     <!--Notification-->
     <div class="notif">
       <div class="popup">
-        <h2>
-          Pilihan anda sudah kami simpan! Terima kasih sudah berpartisipasi
-          dalam pemilihan ini.
-        </h2>
+        <div class="toa">
+          <img src="toaa.png" alt="" />
+        </div>
+        <div class="pesan">
+            <p>
+            Pilihan anda sudah kami simpan! Terima kasih sudah berpartisipasi
+              dalam pemilihan ini.
+          </p>
+        </div>
+        </div>
       </div>
     </div>
 
@@ -83,15 +118,13 @@
       <button
         style="
           height: 30px;
-          width: 110px;
-          margin-top: 10px;
+          width: 160px;
           border-radius: 10px;
           background-color: #ebd4c1;
-          border: 0px;
-          font-size: 20px;
+          border: 10px;
         "
       >
-        <h4>Kembali ke Halaman Log in</h4>
+        <h5>Kembali ke Halaman Log in</h5>
       </button>
     </div>
   </body>

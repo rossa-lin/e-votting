@@ -14,7 +14,7 @@
             background-image: url('background-utama.png');
             margin-right: 100px;
             padding-right: 65px;
-            position: fixed;
+            
         }
         nav {
             background: #701F31;
@@ -70,10 +70,8 @@
             border-radius: 40px;
             width: 800px;
             height: 400px;
-            display: flex;
-            justify-self: end;
-            flex-direction: column;
             margin-right: 85px;
+            position: relative;
         }
         .kandidat {
             display: flex;
@@ -102,43 +100,37 @@
             justify-content: center;
             margin-top: -10px;
         }
-        .button-voting-1 {
-            display: block;
-            margin:auto;
-            background: #571C21;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            padding: 10px 26px;
-            font-size: 16px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .button-voting-1:hover{
-            background: #CA757D ;
-        }
-        .button-kembali {
-            display: block;
-            margin:auto;
-            background: #571C21;
-            color: white;
-            border: none;
-            border-radius: 30px;
-            padding: 10px 26px;
-            font-size: 16px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .button-kembali:hover{
-            background: #EBD4C1 ;
-        }
+        
         .button-1 {
-            gap: 50px;
+            position: absolute;
+            bottom: 20px; 
+            left: 40%;    
             display: flex;
-            justify-items: center;
             justify-content: center;
-            margin-top: 15px;
-            margin-right: -180px;
+            align-items: center;
+            gap: 100px;
+            width: auto;
+            margin: 0;
+        }
+
+        .button-voting-1,
+        .button-kembali {
+            display: inline-block;
+            background: #571C21;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 24px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .button-voting-1:hover,
+        .button-kembali:hover {
+            background: #CA757D;
         }
         .deskripsi {
             font-size: 15px;
@@ -200,8 +192,9 @@
                 </div>
              </div>
 
-             <button class="button-voting-1">Voting</button>
-             <button class="button-kembali">Kembali</button>
+             <div class="button-1">
+            <a href="pop-up.html" class="button-voting-1">Voting</a>
+            <a href="index.html" class="button-kembali">Kembali</a>
         </div>
     </div>
 
@@ -218,7 +211,6 @@
             </div>
 
 </div>
-    
 </div>
 </body>
 </html>

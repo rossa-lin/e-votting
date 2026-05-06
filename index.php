@@ -84,6 +84,7 @@
     }
     .login-btn:hover{
         background: #CA757D ;
+        transform: scale(1.05);
     }
     .input-box {
         width: 100%;

@@ -10,7 +10,7 @@
   <style>
      
     .navbar {
-      width: 100%;
+      width: auto;
       height: 65px;
       background: #701F31;
       display: flex;
@@ -139,22 +139,27 @@
   
   <div class="container">
     <div class="card">
-    <div class="teks">
-          <p>Masukkan NIS Anda</p>
-          <div class="input-box">
-          <i class="hgi hgi-stroke hgi-user"></i>
-          <input type="text" placeholder="NIS">
-        </div>
-
-    <div class="teks">
-          <p>Masukkan Kode Anda</p>
-          <div class="input-box">
-             <i class="hgi hgi-stroke hgi-square-lock-02"></i>
-          <input type="text" placeholder="Kode">
-        </div>
-        
-    <button class="login-btn">Login</button>
+      <form action="proses_login.php" method="POST">
+  
+  <div class="teks">
+    <p>Masukkan NIS Anda</p>
+    <div class="input-box">
+      <i class="hgi hgi-stroke hgi-user"></i>
+      <input type="text" name="nis" placeholder="NIS">
     </div>
+  </div>
+
+  <div class="teks">
+    <p>Masukkan Kode Anda</p>
+    <div class="input-box">
+      <i class="hgi hgi-stroke hgi-square-lock-02"></i>
+      <input type="text" name="kode" placeholder="Kode">
+    </div>
+  </div>
+
+  <button type="submit" class="login-btn">Login</button>
+
+</form>
 
 </div>
 </body>

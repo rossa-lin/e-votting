@@ -74,7 +74,6 @@
 
     <div class="button">
         <button style="width: 150px; border-radius: 20px; background-color: #E4CBBA; border: 0px;"><span><b>Coba Lagi</b></span></button>
-    </div>
 </div>
 </body>
 </html>

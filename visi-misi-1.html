@@ -103,15 +103,34 @@
             margin-top: -10px;
         }
         .button-voting-1 {
-            height: 30px;
-            display: flex;
-            justify-content: center;
+            display: block;
+            margin:auto;
+            background: #571C21;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 26px;
+            font-size: 16px;
+            font-weight: bold;
             transition: 0.3s;
         }
+        .button-voting-1:hover{
+            background: #CA757D ;
+        }
         .button-kembali {
-            height: 30px;
-            display: flex;
-            justify-content: center;
+            display: block;
+            margin:auto;
+            background: #571C21;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 26px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button-kembali:hover{
+            background: #EBD4C1 ;
         }
         .button-1 {
             gap: 50px;
@@ -181,14 +200,8 @@
                 </div>
              </div>
 
-            <div class="button-1">
-                <div class="button-voting-1">
-                <button style="width: 100px; border-radius: 10px; background-color: #571C21; border: 0px;"><span style="color: #EBD4C1;"><b>Voting</b></span></button>
-                </div>
-                <div class="button-kembali">
-                <button style="width: 100px; border-radius: 10px; background-color: #851521; border: 0px;"><span style="color: #EBD4C1;"><b>Kembali</b></span></button>
-                </div>
-            </div>
+             <button class="button-voting-1">Voting</button>
+             <button class="button-kembali">Kembali</button>
         </div>
     </div>
 

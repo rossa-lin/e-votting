@@ -26,20 +26,31 @@
         margin-right: -10px;
       }
 
+      .sidebar {
+        background-color: #701F31;
+        width: 230px;  
+        height: 600px;    
+        margin-top: 0;       
+        position: fixed;    
+        top: 48px;           
+        left: 0;             
+      }
+
+      .notif{
+        display: flex;
+        justify-content: center;
+        margin-top: 3px;
+      }
+
       .logo img {
         margin-top: -35px;
         margin-left: -25px;
       }
 
       body {
+        display: flex;
         background-image: url("background-utama.png");
         color: white;
-      }
-
-      .sidebar {
-        background-color: #701F31;
-        width: 100px;
-        height: 520px;
       }
 
       .popup {
@@ -69,6 +80,23 @@
         font-size: 25px;
       }
 
+      .kembali {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .kembali-btn {
+        background-color: #ebd4c1;
+        border: 0px;
+        border-radius: 30px;
+        transition: 0.3s;
+      }
+
+      .kembali-btn:hover {
+        background: #CA757D ;
+      }
+
       .kembali h5 {
         color: #701f31;
         text-align: center;
@@ -86,15 +114,16 @@
     <!-- SIDEBAR -->
     <div class="sidebar">
       <div class="button">
-        <button><span>Voting</span></button>
+        <button style="width: 150px; height: 35px; background-color: #EBD4C1; border: 0px; border-radius: 30px;"><span style="font-size: 20px;"><b>Voting</b></span></button>
       </div>
       <div class="button">
-        <button><span>Hasil Voting</span></button>
+        <button style="width: 160px; height: 35px; border-radius: 20px; background-color: #EBD4C1; border: 0px; border-radius: 30px; transition: 0.3s;"><span style="font-size: 20px;"><b>Hasil Voting</b></span></button>
       </div>
-
       <div class="button">
-        <p>Hi, 1234!</p>
-        <button><span>Log out</span></button>
+        <span style="color: #EBD4C1;"><b>Hi, 1234!</b></span>
+      </div>
+      <div class="button">
+        <button class="logout-btn">Log out</button>
       </div>
     </div>
 
@@ -110,13 +139,13 @@
               dalam pemilihan ini.
           </p>
         </div>
-        </div>
+        </div> 
       </div>
     </div>
 
     <div class="kembali">
       <button
-        style="
+      style="
           height: 30px;
           width: 160px;
           border-radius: 10px;

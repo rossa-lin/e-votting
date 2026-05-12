@@ -51,6 +51,26 @@
             font-size: 15px;
             font-family: 'Poppins';
         }
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-coba{
+            text-decoration: none;
+            background: #E4CBBA;
+            color: #49232B;
+            padding: 10px 35px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-coba:hover{
+            background: #CA757D;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -72,8 +92,8 @@
         <p><b>NIS atau Kode Anda Salah.<br> Silahkan Coba Lagi!</b></p>
     </div>
 
-    <div class="button">
-        <button style="width: 150px; border-radius: 20px; background-color: #E4CBBA; border: 0px;"><span><b>Coba Lagi</b></span></button>
+<div class="button">
+    <a href="index.php" class="btn-coba">Coba Lagi</a>
 </div>
 </body>
 </html>

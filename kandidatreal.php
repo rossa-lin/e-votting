@@ -26,53 +26,62 @@
       }
 
       nav {
-        width: 100%;
+        background: #701F31;
+        box-shadow: 0 0 5px black;
         height: 55px;
-        background: #701f31;
-        display: flex;
-        align-items: center;
+        width: 1280px;
+        margin-top: -10px;
+        margin-left: -10px;
+        margin-right: -10px;
       }
-          .logo img {
-        width: 140px;
-        margin-top: 8px;
-        margin-left: 20px;
+
+      .logo img {
+        margin-top: -30px;
+        margin-left: -25px;
       }
 
       /* LAYOUT */
       .side-bar {
-        background: #701f31;
-        width: 220px;
-        position: fixed;
-        top: 47px;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 40px 20px 20px;
-        left: 0;
-        top: 55px;
-        bottom: 0;
+            background: #701F31;
+            width: 230px;
+            position: fixed;
+            top: 47px;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 20px 20px; 
       }
       .side-bar button {
-          width: 180px;
-          height: 43px;
-          border-radius: 25px;
-          font-size: 18px;
-            background: #ebd4c1;
-          color: #6f120b;
-          border: none;
-          font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            border-radius: 30px;
+            background: #EBD4C1;
+            color: #571C21;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
       }
+
+        .side-button:hover {
+            background: #CA757D;
+            color: white;
+            transform: scale(1.05);
+        }
+
       .judul{
         margin-left: 220px;
-        padding-top: 40px;
+        padding-top: 10px;
       }
 
       .judul h1 {
         color: #ebd4c1;
         text-align: center;
-        margin-bottom: 0px;
         font-size: 55px;
       }
 
@@ -82,7 +91,7 @@
         gap: 30px;
         margin-left: 220px;
         margin-top: 30px;
-      
+        flex-wrap: wrap;
       }
 
       .kandidat img {
@@ -102,7 +111,7 @@
         padding-right: 30px;
         border-radius: 30px;
         width: 270px;
-        height: 450px;
+        height: 390px;
     
         display: flex;
         flex-direction: column;
@@ -113,6 +122,7 @@
       .profil h1 {
         color: #6f120b;
         text-align: center;
+        margin-top: 15px;
       }
 
       .profil h3 {
@@ -160,7 +170,7 @@
       <!-- KANDIDAT 1 -->
       <div class="kandidat">
         <div class="profil">
-          <img src="Deswita.jpeg" alt="" />
+          <img src="deswita2.jpeg" alt="" />
           <h1>Kandidat 1</h1>
           <h3>Deswita M</h3>
 
@@ -185,7 +195,7 @@
       <!-- KANDIDAT 2 -->
       <div class="kandidat">
         <div class="profil">
-          <img src="Zila.jpeg" alt="" />
+          <img src="zila2.jpeg" alt="" />
           <h1>Kandidat 2</h1>
           <h3>Zila Asza A</h3>
 
@@ -210,7 +220,7 @@
       <!-- KANDIDAT 3 -->
       <div class="kandidat">
         <div class="profil">
-          <img src="Wiwit.jpeg" alt="" />
+          <img src="wiwit2.jpeg" alt="" />
           <h1>Kandidat 3</h1>
           <h3>Wiwit Nur S</h3>
 

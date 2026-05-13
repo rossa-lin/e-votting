@@ -1,243 +1,236 @@
 <!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Halaman Kandidat</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Kandidat</title>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
 
-    body {
-      background-image: url("background-utama.png");
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
-    }
+      body {
+        background-image: url("background-utama.png");
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+      }
 
-    /* NAVBAR */
-    nav {
-      background: #701f31;
-      height: 55px;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      box-shadow: 0 0 5px black;
-    }
+      /* NAVBAR */
+      nav {
+        background: #701f31;
+        height: 55px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 0 5px black;
+      }
 
-    .logo img {
-      width: 200px;
-      margin-top: -30px;
-      margin-left: -25px;
-    }
+      .logo img {
+        width: 200px;
+        margin-top: -30px;
+        margin-left: -25px;
+      }
 
-    /* SIDEBAR */
-    .side-bar {
-      background: #701f31;
-      width: 230px;
-      position: fixed;
-      top: 55px;
-      left: 0;
-      bottom: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 40px 20px 20px;
-    }
+      /* SIDEBAR */
+      .side-bar {
+        background: #701f31;
+        width: 230px;
+        position: fixed;
+        top: 55px;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 20px 20px;
+      }
 
-    .menu,
-    .bottom {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+      .menu,
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
 
-    .side-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 45px;
-      border-radius: 30px;
-      background: #ebd4c1;
-      color: #571c21;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 700;
-      transition: 0.3s;
-    }
+      .side-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45px;
+        border-radius: 30px;
+        background: #ebd4c1;
+        color: #571c21;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        transition: 0.3s;
+      }
 
-    .side-btn:hover {
-      background: #ca757d;
-      color: white;
-      transform: scale(1.05);
-    }
+      .side-btn:hover {
+        background: #ca757d;
+        color: white;
+        transform: scale(1.05);
+      }
 
-    .user {
-      color: #ebd4c1;
-      text-align: center;
-      opacity: 0.7;
-    }
+      .user {
+        color: #ebd4c1;
+        text-align: center;
+        opacity: 0.7;
+      }
 
-    /* CONTENT */
-    .content {
-      margin-left: 230px;
-      padding-top: 90px;
-      padding-bottom: 40px;
-    }
+      /* CONTENT */
+      .content {
+        margin-left: 230px;
+        padding-top: 90px;
+        padding-bottom: 40px;
+      }
 
-    .judul h1 {
-      color: #ebd4c1;
-      text-align: center;
-      font-size: 60px;
-      margin-bottom: 40px;
-    }
+      .judul h1 {
+        color: #ebd4c1;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 40px;
+      }
 
-    /* CARD */
-    .kandidats {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
+      /* CARD */
+      .kandidats {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
 
-    .profil {
-      background: #ebd4c1;
-      width: 270px;
-      height: 390px;
-      border-radius: 30px;
-      padding: 25px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+      .profil {
+        background: #ebd4c1;
+        width: 230px;
+        height: 340px;
+        border-radius: 30px;
+        padding: 25px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-    .profil img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-    }
+      .profil img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
 
-    .profil h1 {
-      color: #6f120b;
-      font-size: 40px;
-    }
+      .profil h1 {
+        color: #6f120b;
+        font-size: 30px;
+      }
 
-    .profil h3 {
-      color: #6f120b;
-      margin-top: -5px;
-      margin-bottom: 25px;
-    }
+      .profil h3 {
+        color: #6f120b;
+        margin-top: -5px;
+        margin-bottom: 25px;
+      }
 
-    /* BUTTON DETAIL */
-    .detail button {
-      width: 120px;
-      height: 38px;
-      border: none;
-      border-radius: 10px;
-      background: #723238;
-      color: #ebd4c1;
-      font-size: 18px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+      /* BUTTON DETAIL */
+      .detail button {
+        width: 120px;
+        height: 38px;
+        border: none;
+        border-radius: 10px;
+        background: #723238;
+        color: #ebd4c1;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+      }
 
-    .detail button:hover {
-      background: #ca757d;
-      transform: scale(1.05);
-    }
-  </style>
-</head>
+      .detail button:hover {
+        background: #ca757d;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">
+        <img src="Logo PilihAja.png" alt="" />
+      </div>
+    </nav>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="logo">
-      <img src="Logo PilihAja.png" alt="">
-    </div>
-  </nav>
-
-  <!-- SIDEBAR -->
-  <div class="side-bar">
-
-    <div class="menu">
-      <a href="" class="side-btn">Voting</a>
-      <a href="hasil-votting.html" class="side-btn">Hasil Voting</a>
-    </div>
-
-    <div class="bottom">
-      <div class="user">Hi, 1234!</div>
-      <a href="index.php" class="side-btn">Log out</a>
-    </div>
-
-  </div>
-
-  <!-- CONTENT -->
-  <div class="content">
-
-    <div class="judul">
-      <h1>Daftar Kandidat</h1>
-    </div>
-
-    <div class="kandidats">
-
-      <!-- KANDIDAT 1 -->
-      <div class="profil">
-        <img src="deswita2.jpeg" alt="">
-        <h1>Kandidat 1</h1>
-        <h3>Deswita M</h3>
-
-      <div class="detail">
-        <a href="visi-misi-1.html">
-          <button>Detail</button>
-        </a>
-</div>
+    <!-- SIDEBAR -->
+    <div class="side-bar">
+      <div class="menu">
+        <a href="" class="side-btn">Voting</a>
+        <a href="hasil-votting.html" class="side-btn">Hasil Voting</a>
       </div>
 
-      <!-- KANDIDAT 2 -->
-      <div class="profil">
-        <img src="zila2.jpeg" alt="">
-        <h1>Kandidat 2</h1>
-        <h3>Zila Asza A</h3>
-
-      <div class="detail">
-        <a href="visi-misi-2.html">
-          <button>Detail</button>
-        </a>
-</div>
+      <div class="bottom">
+        <div class="user">Hi, 1234!</div>
+        <a href="index.php" class="side-btn">Log out</a>
       </div>
-
-      <!-- KANDIDAT 3 -->
-      <div class="profil">
-        <img src="wiwit2.jpeg" alt="">
-        <h1>Kandidat 3</h1>
-        <h3>Wiwit Nur S</h3>
-
-      <div class="detail">
-        <a href="visi-misi-3.html">
-          <button>Detail</button>
-        </a>
-</div>
-      </div>
-
     </div>
-  </div>
 
-</body>
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="judul">
+        <h1>Daftar Kandidat</h1>
+      </div>
+
+      <div class="kandidats">
+        <!-- KANDIDAT 1 -->
+        <div class="profil">
+          <img src="deswita2.jpeg" alt="" />
+          <h1>Kandidat 1</h1>
+          <h3>Deswita M</h3>
+
+          <div class="detail">
+            <a href="visi-misi-1.html">
+              <button>Detail</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- KANDIDAT 2 -->
+        <div class="profil">
+          <img src="zila2.jpeg" alt="" />
+          <h1>Kandidat 2</h1>
+          <h3>Zila Asza A</h3>
+
+          <div class="detail">
+            <a href="visi-misi-2.html">
+              <button>Detail</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- KANDIDAT 3 -->
+        <div class="profil">
+          <img src="wiwit2.jpeg" alt="" />
+          <h1>Kandidat 3</h1>
+          <h3>Wiwit Nur S</h3>
+
+          <div class="detail">
+            <a href="visi-misi-3.html">
+              <button>Detail</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

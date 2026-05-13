@@ -1,16 +1,13 @@
 <?php
-// Data login benar (contoh statis dulu)
 $nis_benar  = "12345";
 $kode_benar = "abc123";
 
-// Cek saat tombol login ditekan
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nis  = $_POST['nis'];
     $kode = $_POST['kode'];
 
-    // Jika benar
     if ($nis == $nis_benar && $kode == $kode_benar) {
-        header("Location: kandidat.html");
+        header("Location: kandidatreal.html");
         exit();
     } else {
         header("Location: error.php");
@@ -28,124 +25,121 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-<style>
-.navbar {
-  width: auto;
-  height: 65px;
-  background: #701F31;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.15);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-}
-.logo img {
-  width: 165px;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
+      <style>
+      .navbar {
+        width: auto;
+        height: 65px;
+        background: #701F31;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+      }
+      .logo img {
+        width: 165px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+      }
 
-.teks-judul {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.title {
-  text-align: center;
-  margin-bottom: 10px;
-}
+      .teks-judul {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .title {
+        text-align: center;
+        margin-bottom: 10px;
+      }
 
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: 'Poppins', sans-serif;
-}
-body{
-  background-image: url(background-utama.png);
-  color: #E4CBBA;
-}
-.teks{
-    font-size: 16px;
-    text-align:start;
-    color: #482119;
-    width: 100%;
-    margin-bottom: 30px;
-}
-.container{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:80px;
-    margin-top:60px;
-}
-.card{
-    background:#e8d0bf;
-    padding:40px;
-    border-radius:25px;
-    width:416px;
-    height: 380px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-.login-btn{
-    display: block;
-    margin:auto;
-    background: #723238;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 10px 26px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.login-btn:hover{
-    background: #CA757D ;
-}
-.input-box {
-    width: 100%;
-    height: 51px;
-    border: 1px solid #5b2d2d;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    padding: 0 25px;
-    gap: 20px;
-    margin-top:10px;
-    margin-bottom: 30px;
-}
-.input-box i {
-    color: #7a120d;
-}
-.input-box input {
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 16px;
-    color: #b3877d;
-    width: 100%;
-}
-.input-box input::placeholder {
-    color: #b3877d;
-}
-.girl {   
-    position: absolute;
-    right: 80px;
-    bottom: 0;
-    width: 390px;
-}
-.error {
-    color: red;
-    text-align: center;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-</style>
-</head>
+      * {
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      body{
+        background-image: url(background-utama.png);
+        color: #E4CBBA;
+      }
+      .teks{
+          font-size: 16px;
+          text-align:start;
+          color: #482119;
+          width: 100%;
+          margin-bottom: 30px;
+      }
+      .container{
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          gap:80px;
+          margin-top:60px;
+      }
+      .card{
+          background:#e8d0bf;
+          padding:40px;
+          border-radius:25px;
+          width:416px;
+          height: 380px;
+          box-shadow:0 10px 30px rgba(0,0,0,0.2);
+      }
+      .login-btn{
+          display: block;
+          margin:auto;
+          background: #723238;
+          color: white;
+          border: none;
+          border-radius: 30px;
+          padding: 10px 26px;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: 0.3s;
+      }
+      
+      .login-btn:hover{
+          background: #CA757D;
+          transform: scale(1.05);
+      }
+      .input-box {
+          width: 100%;
+          height: 51px;
+          border: 1px solid #5b2d2d;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          padding: 0 25px;
+          gap: 20px;
+          margin-top:10px;
+          margin-bottom: 30px;
+      }
+      .input-box i {
+          color: #7a120d;
+      }
+      .input-box input {
+          border: none;
+          outline: none;
+          background: transparent;
+          font-size: 16px;
+          color: #b3877d;
+          width: 100%;
+      }
+      .input-box input::placeholder {
+          color: #b3877d;
+      }
+      .girl {   
+          position: absolute;
+          right: 80px;
+          bottom: 0;
+          width: 390px;
+      }
+
+      </style>
+      </head>
 
 <body>
 <nav class="navbar">
@@ -165,12 +159,6 @@ body{
     <div class="container">
         <div class="card">
             <form action="" method="POST">
-
-                <?php
-                if (isset($error)) {
-                    echo "<p class='error'>$error</p>";
-                }
-                ?>
 
                 <div class="teks">
                     <p>Masukkan NIS Anda</p>

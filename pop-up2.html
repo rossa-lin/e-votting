@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visi Misi 3</title>
+    <title>Pop Up Konfirmasi</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -192,6 +192,66 @@
         background: #ca757d;
         transform: scale(1.05);
       }
+
+      .popup {
+        width: 700px;
+        height: 300px;
+        background: #e8d3c4;
+        border: 3px solid #7b2332;
+        border-radius: 12px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+
+        position: fixed;
+        top: 40%;
+        left: 28%;
+      }
+
+      .popup-content {
+        flex: 1;
+        text-align: center;
+      }
+
+      .popup .logo img {
+        width: 150px;
+      }
+
+      .popup-content h2 {
+        color: #8a3a48;
+        font-size: 23px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .popup-content p {
+        color: #8a3a48;
+        font-size: 23px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      .popup-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .btn {
+        border: none;
+        background: #8b1223;
+        color: white;
+        padding: 8px 24px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #751f28;
+      }
     </style>
   </head>
   <body>
@@ -221,28 +281,28 @@
       <div class="kandidat">
         <div class="kandidat-isi">
           <div class="kandidat-1">
-            <h2>Detail Kandidat 3</h2>
+            <h2>Detail Kandidat 2</h2>
           </div>
 
           <div class="nama">
-            <h3>Wiwit Nur S</h3>
+            <h3>Zila Asza A</h3>
           </div>
 
           <div class="img-desk">
             <div class="foto">
-              <img src="wiwit2.jpeg" />
+              <img src="zila2.jpeg" />
             </div>
 
             <div class="deskripsi">
               <p>
-                Saya memiliki visi untuk menciptakan kelas yang kompak, nyaman,
-                dan saling menghargai satu sama lain. Saya ingin membangun
-                hubungan yang baik antar teman agar tidak ada yang merasa
-                dikucilkan dan semua dapat bekerja sama dengan baik. saya akan
-                berusaha menjadi pendengar yang baik bagi teman-teman serta
-                membantu menyampaikan aspirasi atau pendapat kepada guru. Saya
-                juga ingin menjadikan kelas sebagai tempat belajar yang
-                menyenangkan, penuh semangat, dan memiliki solidaritas tinggi.
+                Saya memiliki visi untuk mewujudkan kelas yang tertib, disiplin,
+                dan fokus dalam meraih prestasi. Untuk itu, saya akan berusaha
+                menegakkan aturan kelas secara konsisten agar tercipta
+                lingkungan belajar yang kondusif. Saya juga ingin meningkatkan
+                kesadaran akan pentingnya tanggung jawab, dalam kehadiran,
+                tugas, maupun sikap selama pembelajaran dan membantu teman-teman
+                agar lebih fokus dan serius dalam belajar sehingga kita bisa
+                mencapai hasil yang maksimal bersama.
               </p>
             </div>
           </div>
@@ -251,6 +311,25 @@
             <a href="pop-up.html" class="button-voting-1">Voting</a>
             <a href="kandidat.html" class="button-kembali">Kembali</a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="logo">
+        <img src="logo centang.png" alt="" />
+      </div>
+
+      <div class="popup-content">
+        <h2>Yakin dengan pilihan anda?</h2>
+        <p>
+          Setelah klik “Simpan” anda tidak dapat<br />
+          mengubah pilihan anda.
+        </p>
+
+        <div class="popup-buttons">
+          <button class="btn">Simpan</button>
+          <button class="btn">Batal</button>
         </div>
       </div>
     </div>

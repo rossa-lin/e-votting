@@ -1,16 +1,16 @@
 <?php
-$nis_benar  = "12345";
-$kode_benar = "abc123";
+include 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nis  = $_POST['nis'];
-    $kode = $_POST['kode'];
 
-    if ($nis == $nis_benar && $kode == $kode_benar) {
-        header("Location: kandidat.html");
+    $query = "SELECT * FROM users WHERE username='".$_POST['nis']."' AND plain_code='".$_POST['kode']."'";
+    $result = $conn->query($query);
+
+    if ($result->num_rows > 0) {
+        header("location:kandidat.php");
         exit();
     } else {
-        header("Location: error.php");
+        header("location:error.html");
         exit();
     }
 }

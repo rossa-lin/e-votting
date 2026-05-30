@@ -10,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $conn->query($query);
 
     if ($result->num_rows > 0) {
-<<<<<<< HEAD
         $user = $result->fetch_assoc();
         $user_id = $user['id'];
 
@@ -23,10 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("location:kandidat.php");
             exit();
         }
-=======
-        header("location:kandidat.php");
-        exit();
->>>>>>> 07bbefa28f13e6c9cd4f4e041266274faf7b7f93
     } else {
         header("location:error.php");
         exit();

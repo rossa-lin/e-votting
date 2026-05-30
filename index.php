@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: kandidat.html");
         exit();
     } else {
-        header("Location: error.php");
+        header("Location: error.html");
         exit();
     }
 }

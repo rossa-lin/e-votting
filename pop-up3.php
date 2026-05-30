@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visi Misi 3</title>
+    <title>Pop Up Konfirmasi</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -138,7 +138,7 @@
         justify-content: center;
         margin-top: 5px;
         margin-bottom: 5px;
-        margin-right: 120px;
+        margin-right: 105px;
       }
 
       .img-desk {
@@ -193,6 +193,68 @@
         background: #ca757d;
         transform: scale(1.05);
       }
+
+      .popup {
+        width: 700px;
+        height: 300px;
+        background: #e8d3c4;
+        border: 3px solid #7b2332;
+        border-radius: 12px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        z-index: 9999;
+        position: fixed;
+        top: 40%;
+        left: 28%;
+      }
+
+      .popup-content {
+        flex: 1;
+        text-align: center;
+      }
+
+      .popup .logo img {
+        width: 150px;
+      }
+
+      .popup-content h2 {
+        color: #8a3a48;
+        font-size: 23px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .popup-content p {
+        color: #8a3a48;
+        font-size: 23px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      .popup-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .btn {
+        border: none;
+        background: #8b1223;
+        color: white;
+        padding: 8px 24px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn:hover {
+        background: #751f28;
+      }
     </style>
   </head>
   <body>
@@ -204,8 +266,8 @@
 
     <div class="side-bar">
       <div class="menu">
-        <a href="kandidat.html" class="side-btn">Voting</a>
-        <a href="hasil-votting.html" class="side-btn">Hasil Voting</a>
+        <a href="kandidat.php" class="side-btn">Voting</a>
+        <a href="hasil-votting.php" class="side-btn">Hasil Voting</a>
       </div>
 
       <div class="bottom">
@@ -249,9 +311,28 @@
           </div>
 
           <div class="button-1">
-            <a href="pop-up3.html" class="button-voting-1">Voting</a>
-            <a href="kandidat.html" class="button-kembali">Batal</a>
+            <a href="pop-up.php" class="button-voting-1">Voting</a>
+            <a href="kandidat.php" class="button-kembali">Kembali</a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="logo">
+        <img src="logo centang.png" alt="" />
+      </div>
+
+      <div class="popup-content">
+        <h2>Yakin dengan pilihan anda?</h2>
+        <p>
+          Setelah klik “Simpan” anda tidak dapat<br />
+          mengubah pilihan anda.
+        </p>
+
+        <div class="popup-buttons">
+          <a href="proses-vote.php?option_id=3" class="btn">Simpan</a>
+          <a href="visi-misi-3.php" class="btn">Batal</a>
         </div>
       </div>
     </div>

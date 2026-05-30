@@ -266,8 +266,8 @@
 
     <div class="side-bar">
       <div class="menu">
-        <a href="kandidat.html" class="side-btn">Voting</a>
-        <a href="hasil-votting.html" class="side-btn">Hasil Voting</a>
+        <a href="kandidat.php" class="side-btn">Voting</a>
+        <a href="hasil-votting.php" class="side-btn">Hasil Voting</a>
       </div>
 
       <div class="bottom">
@@ -311,8 +311,8 @@
           </div>
 
           <div class="button-1">
-            <a href="pop-up.html" class="button-voting-1">Voting</a>
-            <a href="kandidat.html" class="button-kembali">Kembali</a>
+            <a href="pop-up.php" class="button-voting-1">Voting</a>
+            <a href="kandidat.php" class="button-kembali">Kembali</a>
           </div>
         </div>
       </div>
@@ -332,8 +332,8 @@
 
  
         <div class="popup-buttons">
-          <a href="voting-disimpan.html" class="btn">Simpan</a>
-          <a href="visi-misi-2.html" class="btn">Batal</a>
+          <a href="proses-vote.php?option_id=2" class="btn">Simpan</a>
+          <a href="visi-misi-2.php" class="btn">Batal</a>
         </div>
       </div>
     </div>

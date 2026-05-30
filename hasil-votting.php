@@ -1,3 +1,45 @@
+<?php
+// =============================================
+// KONEKSI DATABASE - sesuaikan dengan punyamu
+// =============================================
+$host     = "localhost";
+$dbname   = "rpl-vote";
+$username = "root";
+$password = "";
+
+$conn = new mysqli($host, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
+
+// =============================================
+// AMBIL DATA KANDIDAT + JUMLAH SUARA
+// =============================================
+$sql = "
+    SELECT 
+        o.id,
+        o.candidate_name,
+        o.photo,
+        COUNT(v.id) AS jumlah_suara
+    FROM options o
+    LEFT JOIN votes v ON v.option_id = o.id
+    GROUP BY o.id, o.candidate_name, o.photo
+    ORDER BY o.id ASC
+";
+
+$result = $conn->query($sql);
+$kandidats = [];
+
+while ($row = $result->fetch_assoc()) {
+    $kandidats[] = $row;
+}
+
+// Hitung total suara
+$total_suara = array_sum(array_column($kandidats, 'jumlah_suara'));
+
+$conn->close();
+?>
 <!doctype html>
 <html lang="id">
   <head>
@@ -26,7 +68,7 @@
       }
 
       /* NAVBAR */
-      nav { 
+      nav {
         background: #701f31;
         height: 55px;
         width: 100%;
@@ -144,36 +186,8 @@
         margin-bottom: 10px;
       }
 
-      /* BUTTON DETAIL */
-      .detail button {
-        width: 120px;
-        height: 38px;
-        border: none;
-        border-radius: 10px;
-        background: #723238;
-        color: #ebd4c1;
-        font-size: 18px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-
-      .detail button:hover {
-        background: #ca757d;
-        transform: scale(1.05);
-      }
-
       /* SUARA dan PERSENTASE */
-      .suara button {
-        width: 120px;
-        height: 30px;
-        border: none;
-        border-radius: 10px;
-        background: #723238;
-        color: #ebd4c1;
-        font-size: 17px;
-      }
-
+      .suara button,
       .persen button {
         width: 120px;
         height: 30px;
@@ -182,6 +196,8 @@
         background: #723238;
         color: #ebd4c1;
         font-size: 17px;
+        font-weight: 600;
+        margin-top: 4px;
       }
     </style>
   </head>
@@ -197,8 +213,8 @@
     <!-- SIDEBAR -->
     <div class="side-bar">
       <div class="menu">
-        <a href="" class="side-btn">Voting</a>
-        <a href="hasil-votting.html" class="side-btn">Hasil Voting</a>
+        <a href="voting.php" class="side-btn">Voting</a>
+        <a href="hasil-votting.php" class="side-btn">Hasil Voting</a>
       </div>
 
       <div class="bottom">
@@ -214,47 +230,27 @@
       </div>
 
       <div class="kandidats">
-        <!-- KANDIDAT 1 -->
+        <?php foreach ($kandidats as $index => $kandidat): 
+            $no        = $index + 1;
+            $suara     = $kandidat['jumlah_suara'];
+            $persen    = $total_suara > 0 ? round(($suara / $total_suara) * 100) : 0;
+            $foto      = $kandidat['photo'] ?? 'default.jpg';
+            $nama      = htmlspecialchars($kandidat['candidate_name']);
+        ?>
+        <!-- KANDIDAT <?= $no ?> -->
         <div class="profil">
-          <img src="deswita2.jpeg" alt="" />
-          <h1>Kandidat 1</h1>
-          <h3>Deswita M</h3>
+          <img src="<?= htmlspecialchars($foto) ?>" alt="<?= $nama ?>" />
+          <h1>Kandidat <?= $no ?></h1>
+          <h3><?= $nama ?></h3>
 
           <div class="persen">
-            <button>0%</button>
+            <button><?= $persen ?>%</button>
           </div>
           <div class="suara">
-            <button>0 Suara</button>
+            <button><?= $suara ?> Suara</button>
           </div>
         </div>
-
-        <!-- KANDIDAT 2 -->
-        <div class="profil">
-          <img src="zila2.jpeg" alt="" />
-          <h1>Kandidat 2</h1>
-          <h3>Zila Asza A</h3>
-
-          <div class="persen">
-            <button>0%</button>
-          </div>
-          <div class="suara">
-            <button>0 Suara</button>
-          </div>
-        </div>
-
-        <!-- KANDIDAT 3 -->
-        <div class="profil">
-          <img src="wiwit2.jpeg" alt="" />
-          <h1>Kandidat 3</h1>
-          <h3>Wiwit Nur S</h3>
-
-          <div class="persen">
-            <button>0%</button>
-          </div>
-          <div class="suara">
-            <button>0 Suara</button>
-          </div>
-        </div>
+        <?php endforeach; ?>
       </div>
     </div>
   </body>

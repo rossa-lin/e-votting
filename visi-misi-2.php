@@ -138,7 +138,7 @@
         justify-content: center;
         margin-top: 5px;
         margin-bottom: 5px;
-        margin-right: 105px;
+        margin-right: 130px;
       }
 
       .img-desk {
@@ -204,8 +204,8 @@
 
     <div class="side-bar">
       <div class="menu">
-        <a href="kandidat.html" class="side-btn">Voting</a>
-        <a href="hasil-votting.html" class="side-btn">Hasil Voting</a>
+        <a href="kandidat.php" class="side-btn">Voting</a>
+        <a href="hasil-votting.php" class="side-btn">Hasil Voting</a>
       </div>
 
       <div class="bottom">
@@ -222,16 +222,16 @@
       <div class="kandidat">
         <div class="kandidat-isi">
           <div class="kandidat-1">
-            <h2>Detail Kandidat 1</h2>
+            <h2>Detail Kandidat 2</h2>
           </div>
 
           <div class="nama">
-            <h3>Deswita Mahrifiani</h3>
+            <h3>Zila Asza Ananta</h3>
           </div>
 
           <div class="img-desk">
             <div class="foto">
-              <img src="deswita2.jpeg" />
+              <img src="zila2.jpeg" />
             </div>
 
             <div class="deskripsi">
@@ -249,8 +249,8 @@
           </div>
 
           <div class="button-1">
-            <a href="pop-up1.html" class="button-voting-1">Voting</a>
-            <a href="kandidat.html" class="button-kembali">Kembali</a>
+            <a href="pop-up2.php" class="button-voting-1">Voting</a>
+            <a href="kandidat.php" class="button-kembali">Batal</a>
           </div>
         </div>
       </div>

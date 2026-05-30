@@ -176,7 +176,7 @@
     <div class="side-bar">
       <div class="menu">
         <a href="" class="side-btn">Voting</a>
-        <a href="hasil-votting.html" class="side-btn">Hasil Voting</a>
+        <a href="hasil-votting.php" class="side-btn">Hasil Voting</a>
       </div>
 
       <div class="bottom">
@@ -199,7 +199,7 @@
           <h3>Deswita M</h3>
 
           <div class="detail">
-            <a href="visi-misi-1.html">
+            <a href="visi-misi-1.php">
               <button>Detail</button>
             </a>
           </div>
@@ -212,7 +212,7 @@
           <h3>Zila Asza A</h3>
 
           <div class="detail">
-            <a href="visi-misi-2.html">
+            <a href="visi-misi-2.php">
               <button>Detail</button>
             </a>
           </div>
@@ -225,7 +225,7 @@
           <h3>Wiwit Nur S</h3>
 
           <div class="detail">
-            <a href="visi-misi-3.html">
+            <a href="visi-misi-3.php">
               <button>Detail</button>
             </a>
           </div>

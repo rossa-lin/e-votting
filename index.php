@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $kode = $_POST['kode'];
 
     if ($nis == $nis_benar && $kode == $kode_benar) {
-        header("Location: kandidatreal.html");
+        header("Location: kandidat.html");
         exit();
     } else {
         header("Location: error.php");

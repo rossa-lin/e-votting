@@ -3,11 +3,16 @@ include 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+<<<<<<< HEAD
     $query = "SELECT * FROM users WHERE username='".$_POST['nis']."' AND plain_code='".$_POST['kode']."'";
     $result = $conn->query($query);
 
     if ($result->num_rows > 0) {
         header("location:kandidat.php");
+=======
+    if ($nis == $nis_benar && $kode == $kode_benar) {
+        header("Location: kandidatreal.html");
+>>>>>>> d4c2d5f765b4ef9a13641e59159346825759c9ce
         exit();
     } else {
         header("location:error.html");

@@ -232,28 +232,33 @@
         margin-bottom: 25px;
       }
 
+
       .popup-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          margin-top: 10px;
       }
 
-      .btn {
-        border: none;
-        background: #8b1223;
-        color: white;
-        padding: 8px 24px;
-        border-radius: 20px;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: 0.3s;
-        text-decoration: none;
-        display: inline-block;
+      .popup-buttons a {
+          display: inline-block;
+          background: #571c21;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          padding: 8px 22px;
+          font-size: 14px;
+          font-weight: bold;
+          text-decoration: none;
+          text-align: center;
+          cursor: pointer;
+          transition: 0.3s;
       }
 
-      .btn:hover {
-        background: #751f28;
+      .popup-buttons a:hover {
+          background: #ca757d;
+          color: white;
+          transform: scale(1.05);
       }
     </style>
   </head>
@@ -331,8 +336,8 @@
         </p>
 
         <div class="popup-buttons">
-          <a href="proses-vote.php?option_id=1" class="btn">Simpan</a>
-          <a href="visi-misi-1.php" class="btn">Batal</a>
+          <a href="proses-vote.php?option_id=1">Simpan</a>
+          <a href="visi-misi-1.php">Batal</a>
         </div>
       </div>
     </div>

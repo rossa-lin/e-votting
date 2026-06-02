@@ -1,7 +1,5 @@
 <?php
-// =============================================
-// KONEKSI DATABASE - sesuaikan dengan punyamu
-// =============================================
+
 $host     = "localhost";
 $dbname   = "rpl-vote";
 $username = "root";
@@ -13,9 +11,6 @@ if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
-// =============================================
-// AMBIL DATA KANDIDAT + JUMLAH SUARA
-// =============================================
 $sql = "
     SELECT 
         o.id,
@@ -213,7 +208,7 @@ $conn->close();
     <!-- SIDEBAR -->
     <div class="side-bar">
       <div class="menu">
-        <a href="voting.php" class="side-btn">Voting</a>
+        <a href="kandidat.php" class="side-btn">Voting</a>
         <a href="hasil-votting.php" class="side-btn">Hasil Voting</a>
       </div>
 

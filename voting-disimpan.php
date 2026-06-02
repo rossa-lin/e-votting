@@ -183,11 +183,7 @@ nav{
 
     <div class="menu">
         <a href="kandidat.php" class="side-btn">Voting</a>
-<<<<<<< HEAD:voting-disimpan.php
         <a href="hasil-votting.php" class="side-btn">Hasil Voting</a>
-=======
-        <a href="hasil-votting.html" class="side-btn">Hasil Voting</a>
->>>>>>> fc3f6c33de6a8a31482d90f9680cb2ef9e3667c9:voting-disimpan.html
     </div>
 
     <div class="bottom">

@@ -1,101 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
-        nav {
-            background: #701F31;
-            box-shadow: 0 0 5px black;
-            height: 55px;
-            width: 1280px;
-            margin-top: -10px;
-            margin-left: -10px;
-            margin-right: -10px;
-        
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Poppins",sans-serif;
         }
-        .logo img {
-            margin-top: -35px;
-            margin-left: -25px;
+
+        body{
+            background-image:url("background-utama.png");
+            background-size:cover;
+            background-position:center;
+            min-height:100vh;
         }
-        body {
-            background-image: url('background-utama.png');
-            font-family: 'Poppins';
+
+
+        nav{
+            background:#701F31;
+            height:55px;
+            width:100%;
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:1000;
+            box-shadow:0 0 5px black;
         }
-        .teks-eror {
-            font-size: 40px;
-            text-align: center;
-            color: #E4CBBA;
-            padding-bottom: -20px;
+
+        .logo img{
+            width:200px;
+            margin-top:-30px;
+            margin-left:-25px;
         }
-        .eror {
-            display: flex;
-            justify-content: center;
-            margin-top: -60px;
-            
+
+        /* CONTENT */
+
+        .content{
+            padding-top:80px;
         }
-        .teks {
-            font-size: 25px;
-            text-align: center;
-            color: #E4CBBA;
+
+        .teks-eror{
+            text-align:center;
+            color:#E4CBBA;
+            font-size:35px;
         }
-        .button {
-            height: 40px;
-            display: flex;
-            justify-content: center;
+
+        .eror{
+            display:flex;
+            justify-content:center;
+            margin-top:15px;
         }
-        span {
-            color: #49232B;
-            font-size: 15px;
-            font-family: 'Poppins';
+
+        .eror img{
+            width:350px;
+            height:auto;
         }
+
+        .teks{
+            text-align:center;
+            color:#E4CBBA;
+            font-size:25px;
+            margin-top:10px;
+        }
+
         .button{
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
+            display:flex;
+            justify-content:center;
+            margin-top:25px;
         }
 
         .btn-coba{
-            text-decoration: none;
-            background: #E4CBBA;
-            color: #49232B;
-            padding: 10px 35px;
-            border-radius: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
+            text-decoration:none;
+            background:#E4CBBA;
+            color:#49232B;
+            padding:10px 35px;
+            border-radius:20px;
+            font-weight:bold;
+            transition:0.3s;
         }
+
         .btn-coba:hover{
-            background: #CA757D;
-            transform: scale(1.05);
-            color: #E4CBBA;
+            background:#CA757D;
+            color:#E4CBBA;
+            transform:scale(1.05);
         }
+
     </style>
 </head>
 <body>
-<div>
+
+    <!-- NAVBAR -->
+
     <nav>
         <div class="logo">
-            <img src="Logo PilihAja.png" width="200px">
+            <img src="Logo PilihAja.png" alt="">
         </div>
     </nav>
-    <div class="teks-eror">
-        <h2>Error!</h2>
+
+    <!-- CONTENT -->
+
+    <div class="content">
+
+        <div class="teks-eror">
+            <h2>Error!</h2>
+        </div>
+
+        <div class="eror">
+            <img src="error.png" alt="">
+        </div>
+
+        <div class="teks">
+            <p>
+                <b>
+                    NIS atau Kode Anda Salah.
+                    <br>
+                    Silahkan Coba Lagi!
+                </b>
+            </p>
+        </div>
+
+        <div class="button">
+            <a href="index.php" class="btn-coba">Coba Lagi</a>
+        </div>
+
     </div>
 
-    <div class="eror">
-        <img src="error.png" width="350px" height="250px">
-    </div>
-
-    <div class="teks">
-        <p><b>NIS atau Kode Anda Salah.<br> Silahkan Coba Lagi!</b></p>
-    </div>
-
-    <div class="button">
-        <a href="index.php" class="btn-coba">Coba Lagi</a>
-    </div>
-</div>
 </body>
 </html>

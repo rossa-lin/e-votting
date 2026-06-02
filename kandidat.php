@@ -196,7 +196,7 @@
         <div class="profil">
           <img src="deswita2.jpeg" alt="" />
           <h1>Kandidat 1</h1>
-          <h3>Deswita M</h3>
+          <h3>Deswita Mahrifiani</h3>
 
           <div class="detail">
             <a href="visi-misi-1.php">
@@ -209,7 +209,7 @@
         <div class="profil">
           <img src="zila2.jpeg" alt="" />
           <h1>Kandidat 2</h1>
-          <h3>Zila Asza A</h3>
+          <h3>Zila Asza Ananta</h3>
 
           <div class="detail">
             <a href="visi-misi-2.php">
@@ -222,7 +222,7 @@
         <div class="profil">
           <img src="wiwit2.jpeg" alt="" />
           <h1>Kandidat 3</h1>
-          <h3>Wiwit Nur S</h3>
+          <h3>Wiwit Nur Setyani</h3>
 
           <div class="detail">
             <a href="visi-misi-3.php">
